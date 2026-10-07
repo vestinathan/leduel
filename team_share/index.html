@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Mistral - Scoring Salons de Coiffure Paris</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .recommendation {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        .recommendation h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .best-option {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .best-option .arr {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        
+        .best-option .title {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .metric {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .metric .label {
+            font-size: 0.9em;
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .metric .value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .top-5 {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        .top-5 h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .top-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .top-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .top-item .rank {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .top-item .arr {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .top-item .score, .top-item .gap {
+            color: #666;
+            font-size: 0.9em;
+            display: block;
+            margin: 5px 0;
+        }
+        
+        .full-table {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow-x: auto;
+        }
+        
+        .full-table h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .rank-1 { background: #ffeaa7; }
+        .rank-2 { background: #fab1a0; }
+        .rank-3 { background: #e17055; }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        
+        .timestamp {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        .download-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .download-buttons a {
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .download-buttons a:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💇‍♀️ Hackathon Mistral - Scoring Salons de Coiffure</h1>
+            <p class="subtitle">Analyse des zones sous-servies à Paris - 07/10/2026 20:32</p>
+        </header>
+        
+        <div class="recommendation">
+            <h2>🎯 RECOMMANDATION FINALE</h2>
+            <div class="best-option">
+                <div class="arr">17</div>
+                <div class="title">Arrondissement 17</div>
+            </div>
+            <div class="metrics">
+                <div class="metric">
+                    <span class="label">Population</span>
+                    <span class="value">168,590</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Revenu Médian</span>
+                    <span class="value">65,000€</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Salons Existants</span>
+                    <span class="value">150</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Gap Score</span>
+                    <span class="value">1.68e+07</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Score Final</span>
+                    <span class="value">100.0/100</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: #666;">
+                <strong>Pourquoi ?</strong> Meilleur ratio demande/offre avec une clientèle premium (revenu médian de 65,000€) et seulement 150 salons pour 168,590 habitants.
+            </p>
+        </div>
+        
+        <div class="top-5">
+            <h2>🏆 TOP 5 ARRONDISSEMENTS SOUS-SERVIS</h2>
+            <div class="top-items">
+                
+        <div class="top-item">
+            <span class="rank">#1</span>
+            <span class="arr">Arrondissement 17</span>
+            <span class="score">Score: 100.0/100</span>
+            <span class="gap">Gap: 1.68e+07</span>
+        </div>
+        
+
+        <div class="top-item">
+            <span class="rank">#2</span>
+            <span class="arr">Arrondissement 20</span>
+            <span class="score">Score: 74.0/100</span>
+            <span class="gap">Gap: 1.26e+07</span>
+        </div>
+        
+
+        <div class="top-item">
+            <span class="rank">#3</span>
+            <span class="arr">Arrondissement 19</span>
+            <span class="score">Score: 68.9/100</span>
+            <span class="gap">Gap: 1.18e+07</span>
+        </div>
+        
+
+        <div class="top-item">
+            <span class="rank">#4</span>
+            <span class="arr">Arrondissement 18</span>
+            <span class="score">Score: 64.2/100</span>
+            <span class="gap">Gap: 1.10e+07</span>
+        </div>
+        
+
+        <div class="top-item">
+            <span class="rank">#5</span>
+            <span class="arr">Arrondissement 16</span>
+            <span class="score">Score: 62.2/100</span>
+            <span class="gap">Gap: 1.07e+07</span>
+        </div>
+        
+            </div>
+        </div>
+        
+        <div class="full-table">
+            <h2>📊 SCORING COMPLET (TOUS LES ARRONDISSEMENTS)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Arrondissement</th>
+                        <th>Population</th>
+                        <th>Revenu Médian</th>
+                        <th>Nb Salons</th>
+                        <th>Salons/1000 hab</th>
+                        <th>Gap Score</th>
+                        <th>Score Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td>1</td>
+            <td><strong>Arr. 17</strong></td>
+            <td>168,590</td>
+            <td>65,000€</td>
+            <td>150</td>
+            <td>0.8897</td>
+            <td>1.68e+07</td>
+            <td>100.0</td>
+        </tr>
+        
+
+        <tr>
+            <td>2</td>
+            <td><strong>Arr. 20</strong></td>
+            <td>197,336</td>
+            <td>47,000€</td>
+            <td>150</td>
+            <td>0.7601</td>
+            <td>1.26e+07</td>
+            <td>74.0</td>
+        </tr>
+        
+
+        <tr>
+            <td>3</td>
+            <td><strong>Arr. 19</strong></td>
+            <td>184,680</td>
+            <td>45,000€</td>
+            <td>140</td>
+            <td>0.7581</td>
+            <td>1.18e+07</td>
+            <td>68.9</td>
+        </tr>
+        
+
+        <tr>
+            <td>4</td>
+            <td><strong>Arr. 18</strong></td>
+            <td>196,589</td>
+            <td>48,000€</td>
+            <td>180</td>
+            <td>0.9156</td>
+            <td>1.10e+07</td>
+            <td>64.2</td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td><strong>Arr. 16</strong></td>
+            <td>160,793</td>
+            <td>62,000€</td>
+            <td>220</td>
+            <td>1.3682</td>
+            <td>1.07e+07</td>
+            <td>62.2</td>
+        </tr>
+        
+
+        <tr>
+            <td>6</td>
+            <td><strong>Arr. 15</strong></td>
+            <td>228,351</td>
+            <td>50,000€</td>
+            <td>240</td>
+            <td>1.0510</td>
+            <td>9.72e+06</td>
+            <td>56.3</td>
+        </tr>
+        
+
+        <tr>
+            <td>7</td>
+            <td><strong>Arr. 14</strong></td>
+            <td>139,747</td>
+            <td>44,000€</td>
+            <td>150</td>
+            <td>1.0734</td>
+            <td>7.24e+06</td>
+            <td>41.0</td>
+        </tr>
+        
+
+        <tr>
+            <td>8</td>
+            <td><strong>Arr. 13</strong></td>
+            <td>179,878</td>
+            <td>42,000€</td>
+            <td>200</td>
+            <td>1.1119</td>
+            <td>6.33e+06</td>
+            <td>35.5</td>
+        </tr>
+        
+
+        <tr>
+            <td>9</td>
+            <td><strong>Arr. 12</strong></td>
+            <td>139,132</td>
+            <td>45,000€</td>
+            <td>170</td>
+            <td>1.2219</td>
+            <td>6.02e+06</td>
+            <td>33.6</td>
+        </tr>
+        
+
+        <tr>
+            <td>10</td>
+            <td><strong>Arr. 10</strong></td>
+            <td>89,574</td>
+            <td>47,000€</td>
+            <td>140</td>
+            <td>1.5630</td>
+            <td>5.22e+06</td>
+            <td>28.6</td>
+        </tr>
+        
+
+        <tr>
+            <td>11</td>
+            <td><strong>Arr. 9</strong></td>
+            <td>59,737</td>
+            <td>58,000€</td>
+            <td>160</td>
+            <td>2.6784</td>
+            <td>4.19e+06</td>
+            <td>22.3</td>
+        </tr>
+        
+
+        <tr>
+            <td>12</td>
+            <td><strong>Arr. 11</strong></td>
+            <td>148,650</td>
+            <td>43,000€</td>
+            <td>280</td>
+            <td>1.8836</td>
+            <td>3.62e+06</td>
+            <td>18.8</td>
+        </tr>
+        
+
+        <tr>
+            <td>13</td>
+            <td><strong>Arr. 5</strong></td>
+            <td>59,838</td>
+            <td>42,000€</td>
+            <td>150</td>
+            <td>2.5068</td>
+            <td>3.54e+06</td>
+            <td>18.3</td>
+        </tr>
+        
+
+        <tr>
+            <td>14</td>
+            <td><strong>Arr. 7</strong></td>
+            <td>55,914</td>
+            <td>55,000€</td>
+            <td>180</td>
+            <td>3.2192</td>
+            <td>3.40e+06</td>
+            <td>17.5</td>
+        </tr>
+        
+
+        <tr>
+            <td>15</td>
+            <td><strong>Arr. 6</strong></td>
+            <td>41,374</td>
+            <td>50,000€</td>
+            <td>240</td>
+            <td>5.8007</td>
+            <td>1.98e+06</td>
+            <td>8.7</td>
+        </tr>
+        
+
+        <tr>
+            <td>16</td>
+            <td><strong>Arr. 3</strong></td>
+            <td>35,017</td>
+            <td>48,000€</td>
+            <td>180</td>
+            <td>5.1404</td>
+            <td>1.75e+06</td>
+            <td>7.3</td>
+        </tr>
+        
+
+        <tr>
+            <td>17</td>
+            <td><strong>Arr. 4</strong></td>
+            <td>27,410</td>
+            <td>60,000€</td>
+            <td>220</td>
+            <td>8.0263</td>
+            <td>1.65e+06</td>
+            <td>6.7</td>
+        </tr>
+        
+
+        <tr>
+            <td>18</td>
+            <td><strong>Arr. 8</strong></td>
+            <td>37,751</td>
+            <td>46,000€</td>
+            <td>260</td>
+            <td>6.8872</td>
+            <td>1.20e+06</td>
+            <td>3.9</td>
+        </tr>
+        
+
+        <tr>
+            <td>19</td>
+            <td><strong>Arr. 2</strong></td>
+            <td>20,992</td>
+            <td>52,000€</td>
+            <td>200</td>
+            <td>9.5274</td>
+            <td>1.19e+06</td>
+            <td>3.8</td>
+        </tr>
+        
+
+        <tr>
+            <td>20</td>
+            <td><strong>Arr. 1</strong></td>
+            <td>15,361</td>
+            <td>45,000€</td>
+            <td>250</td>
+            <td>16.2750</td>
+            <td>5.63e+05</td>
+            <td>0.0</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="recommendation">
+            <h2>📥 TÉLÉCHARGEMENTS</h2>
+            <p style="margin-bottom: 15px; color: #666;">Exportez les données pour votre équipe :</p>
+            <div class="download-buttons">
+                <a href="paris_hairdresser_scoring.csv" download>📄 CSV (Données brutes)</a>
+                <a href="paris_hairdresser_scoring.json" download>📋 JSON (API-ready)</a>
+                <a href="paris_hairdresser_scoring.csv" download>📊 Tout télécharger</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Hackathon Mistral - 07/10/2026</p>
+            <p class="timestamp">Généré automatiquement par Mistral Vibe</p>
+        </footer>
+    </div>
+</body>
+</html>

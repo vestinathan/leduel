@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistral - Duel des Idées</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Données embeddées pour éviter les problèmes CORS -->
+    <script>
+        // Données des arrondissements de Paris
+        window.MISTRAL_DATA = {
+            generated_at: "2026-10-07T20:32:01.935523",
+            total_arrondissements: 20,
+            recommendation: {
+                best: 17,
+                gap_score: 16818146.20355412,
+                final_score: 11772702.568803672,
+                reason: "Meilleur ratio demande/offre avec clientèle premium"
+            },
+            data: [
+                {"rank":1,"arrondissement":17,"population":168590,"revenu_median":65000,"trends_score":95,"nb_salons":150,"avg_rating":4.12,"salons_per_1000":0.8897,"demand_score":10410432500,"supply_score":618,"gap_score":16818146.20355412,"accessibility_score":1,"estimated_cost":2800,"cost_score":0.26315789473684215,"final_score":11772702.568803672,"final_score_normalized":100},
+                {"rank":2,"arrondissement":20,"population":197336,"revenu_median":47000,"trends_score":85,"nb_salons":150,"avg_rating":4.17,"salons_per_1000":0.7601,"demand_score":7883573200,"supply_score":625.3,"gap_score":12587535.047102029,"accessibility_score":1,"estimated_cost":2200,"cost_score":0.42105263157894735,"final_score":8811274.775076682,"final_score_normalized":73.97},
+                {"rank":3,"arrondissement":19,"population":184680,"revenu_median":45000,"trends_score":82,"nb_salons":140,"avg_rating":4.13,"salons_per_1000":0.7581,"demand_score":6814692000,"supply_score":578.1,"gap_score":11767729.235019857,"accessibility_score":1,"estimated_cost":2000,"cost_score":0.4736842105263158,"final_score":8237410.711882321,"final_score_normalized":68.93},
+                {"rank":4,"arrondissement":18,"population":196589,"revenu_median":48000,"trends_score":88,"nb_salons":180,"avg_rating":4.19,"salons_per_1000":0.9156,"demand_score":8303919360,"supply_score":754.4,"gap_score":10992744.718030183,"accessibility_score":1,"estimated_cost":2500,"cost_score":0.3421052631578947,"final_score":7694921.536831654,"final_score_normalized":64.16},
+                {"rank":5,"arrondissement":16,"population":160793,"revenu_median":62000,"trends_score":98,"nb_salons":220,"avg_rating":4.16,"salons_per_1000":1.3682,"demand_score":9769782680,"supply_score":914.8,"gap_score":10668030.880104827,"accessibility_score":1,"estimated_cost":3500,"cost_score":0.07894736842105265,"final_score":7467621.823968115,"final_score_normalized":62.16},
+                {"rank":6,"arrondissement":15,"population":228351,"revenu_median":50000,"trends_score":85,"nb_salons":240,"avg_rating":4.16,"salons_per_1000":1.051,"demand_score":9704917500,"supply_score":997.9,"gap_score":9715604.665131643,"accessibility_score":1,"estimated_cost":2700,"cost_score":0.2894736842105263,"final_score":6800923.494539519,"final_score_normalized":56.31},
+                {"rank":7,"arrondissement":14,"population":139747,"revenu_median":44000,"trends_score":73,"nb_salons":150,"avg_rating":4.13,"salons_per_1000":1.0734,"demand_score":4488673640,"supply_score":619.4,"gap_score":7235128.368794327,"accessibility_score":1,"estimated_cost":2000,"cost_score":0.4736842105263158,"final_score":5064590.10552445,"final_score_normalized":41.05},
+                {"rank":8,"arrondissement":13,"population":179878,"revenu_median":42000,"trends_score":70,"nb_salons":200,"avg_rating":4.17,"salons_per_1000":1.1119,"demand_score":5288413200,"supply_score":834.1,"gap_score":6332670.578373847,"accessibility_score":1,"estimated_cost":2100,"cost_score":0.4473684210526315,"final_score":4432869.649598534,"final_score_normalized":35.49},
+                {"rank":9,"arrondissement":12,"population":139132,"revenu_median":45000,"trends_score":68,"nb_salons":170,"avg_rating":4.16,"salons_per_1000":1.2219,"demand_score":4257439200,"supply_score":706.4,"gap_score":6018432.569974556,"accessibility_score":1,"estimated_cost":2300,"cost_score":0.39473684210526316,"final_score":4212903.038455874,"final_score_normalized":33.56},
+                {"rank":10,"arrondissement":10,"population":89574,"revenu_median":47000,"trends_score":72,"nb_salons":140,"avg_rating":4.14,"salons_per_1000":1.563,"demand_score":3031184160,"supply_score":579.9,"gap_score":5218082.561542435,"accessibility_score":1,"estimated_cost":2400,"cost_score":0.368421052631579,"final_score":3652658.0299218097,"final_score_normalized":28.64},
+                {"rank":11,"arrondissement":9,"population":59737,"revenu_median":58000,"trends_score":80,"nb_salons":160,"avg_rating":4.13,"salons_per_1000":2.6784,"demand_score":2771796800,"supply_score":660.7,"gap_score":4188902.523802327,"accessibility_score":1,"estimated_cost":2600,"cost_score":0.3157894736842105,"final_score":2932231.998240576,"final_score_normalized":22.31},
+                {"rank":12,"arrondissement":11,"population":148650,"revenu_median":43000,"trends_score":65,"nb_salons":280,"avg_rating":4.09,"salons_per_1000":1.8836,"demand_score":4154767500,"supply_score":1146,"gap_score":3622290.758500436,"accessibility_score":1,"estimated_cost":2200,"cost_score":0.42105263157894735,"final_score":2535603.7730555683,"final_score_normalized":18.82},
+                {"rank":13,"arrondissement":5,"population":59838,"revenu_median":42000,"trends_score":88,"nb_salons":150,"avg_rating":4.15,"salons_per_1000":2.5068,"demand_score":2211612480,"supply_score":623.2,"gap_score":3543115.15539891,"accessibility_score":1,"estimated_cost":2500,"cost_score":0.3421052631578947,"final_score":2480180.8429897632,"final_score_normalized":18.33},
+                {"rank":14,"arrondissement":7,"population":55914,"revenu_median":55000,"trends_score":82,"nb_salons":180,"avg_rating":4.11,"salons_per_1000":3.2192,"demand_score":2521721400,"supply_score":740.6,"gap_score":3400379.4498381875,"accessibility_score":1,"estimated_cost":3500,"cost_score":0.07894736842105265,"final_score":2380265.822781468,"final_score_normalized":17.45},
+                {"rank":15,"arrondissement":6,"population":41374,"revenu_median":50000,"trends_score":95,"nb_salons":240,"avg_rating":4.14,"salons_per_1000":5.8007,"demand_score":1965265000,"supply_score":993.9,"gap_score":1975339.230073374,"accessibility_score":1,"estimated_cost":3200,"cost_score":0.1578947368421053,"final_score":1382737.6768408353,"final_score_normalized":8.69},
+                {"rank":16,"arrondissement":3,"population":35017,"revenu_median":48000,"trends_score":78,"nb_salons":180,"avg_rating":4.16,"salons_per_1000":5.1404,"demand_score":1311036480,"supply_score":748,"gap_score":1750382.483311081,"accessibility_score":1,"estimated_cost":2700,"cost_score":0.2894736842105263,"final_score":1225267.9672651251,"final_score_normalized":7.3},
+                {"rank":17,"arrondissement":4,"population":27410,"revenu_median":60000,"trends_score":92,"nb_salons":220,"avg_rating":4.16,"salons_per_1000":8.0263,"demand_score":1513032000,"supply_score":914.7,"gap_score":1652322.813148411,"accessibility_score":1,"estimated_cost":2900,"cost_score":0.23684210526315785,"final_score":1156626.192888098,"final_score_normalized":6.7},
+                {"rank":18,"arrondissement":8,"population":37751,"revenu_median":46000,"trends_score":75,"nb_salons":260,"avg_rating":4.17,"salons_per_1000":6.8872,"demand_score":1302409500,"supply_score":1085.1,"gap_score":1199161.67940337,"accessibility_score":1,"estimated_cost":3800,"cost_score":0,"final_score":839413.3755823589,"final_score_normalized":3.91},
+                {"rank":19,"arrondissement":2,"population":20992,"revenu_median":52000,"trends_score":90,"nb_salons":200,"avg_rating":4.13,"salons_per_1000":9.5274,"demand_score":982425600,"supply_score":826.7999999999998,"gap_score":1186791.012321817,"accessibility_score":1,"estimated_cost":2800,"cost_score":0.26315789473684215,"final_score":830753.9349410612,"final_score_normalized":3.84},
+                {"rank":20,"arrondissement":1,"population":15361,"revenu_median":45000,"trends_score":85,"nb_salons":250,"avg_rating":4.17,"salons_per_1000":16.275,"demand_score":587558250,"supply_score":1042.3,"gap_score":563172.864947762,"accessibility_score":1,"estimated_cost":3000,"cost_score":0.21052631578947367,"final_score":394221.226516065,"final_score_normalized":0}
+            ]
+        };
+    </script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">Mistral</span>
+            </div>
+            <h1>Duel des Idées</h1>
+            <p class="subtitle">Intuition vs Données - Qui a raison ?</p>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Étape 1 : Choix -->
+            <div class="step active" id="step1">
+                <div class="card">
+                    <div class="step-indicator">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Votre intuition</span>
+                    </div>
+                    <h2>Quel arrondissement vous attire le plus pour ouvrir un salon ?</h2>
+                    <div class="choices" id="choices">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                    <div class="custom-input">
+                        <p>Ou entrez manuellement :</p>
+                        <div class="input-group">
+                            <input type="number" id="customChoice" min="1" max="20" placeholder="Numéro d'arrondissement">
+                            <button class="btn btn-primary" id="submitCustom">→</button>
+                        </div>
+                    </div>
+                    <div class="error" id="error1"></div>
+                </div>
+            </div>
+
+            <!-- Étape 2 : Pourquoi -->
+            <div class="step" id="step2">
+                <div class="card">
+                    <div class="step-indicator">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Vos raisons</span>
+                    </div>
+                    <h2>Pourquoi l'arrondissement <span id="chosenArr" class="highlight"></span> ?</h2>
+                    <div class="reasons-grid" id="reasonsGrid">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                    <div class="criteria-section">
+                        <h3>Qu'est-ce qui compte le plus pour vous ?</h3>
+                        <div class="criteria-grid" id="criteriaGrid">
+                            <!-- Généré dynamiquement -->
+                        </div>
+                    </div>
+                    <div class="error" id="error2"></div>
+                    <div style="display: flex; gap: 10px; margin-top: 20px;">
+                        <button class="btn btn-secondary" id="backBtn2" style="flex: 1;">← Retour</button>
+                        <button class="btn btn-primary" id="nextBtn2" style="flex: 1;">Continuer →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Étape 3 : Confiance -->
+            <div class="step" id="step3">
+                <div class="card">
+                    <div class="step-indicator">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Votre pari</span>
+                    </div>
+                    <h2>À quel point êtes-vous sûr de votre choix ?</h2>
+                    <div class="confidence-container">
+                        <div class="confidence-display">
+                            <span id="confidenceValue">8</span>
+                            <span>/10</span>
+                        </div>
+                        <input type="range" id="confidenceSlider" min="1" max="10" value="8" class="slider">
+                        <div class="slider-labels">
+                            <span>Peu sûr</span>
+                            <span>Très sûr</span>
+                        </div>
+                    </div>
+                    <p class="note">Cette note sera comparée au résultat final.</p>
+                    <div style="display: flex; gap: 10px; margin-top: 20px;">
+                        <button class="btn btn-secondary" id="backBtn3" style="flex: 1;">← Retour</button>
+                        <button class="btn btn-primary" id="nextBtn3" style="flex: 1;">Voir le résultat →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Étape 4 : Duel -->
+            <div class="step" id="step4">
+                <div class="duel-container">
+                    <div class="duel-header">
+                        <div class="step-indicator">
+                            <span class="step-number">4</span>
+                            <span class="step-label">Duel des Idées</span>
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <button class="btn btn-secondary" id="backBtn4">← Retour</button>
+                    </div>
+                    <h2 id="duelTitle">Prêt pour le face-à-face ?</h2>
+                        <p id="duelSubtitle"></p>
+                    </div>
+                    
+                    <div class="duel-cards">
+                        <div class="duel-card intuition">
+                            <div class="card-header">
+                                <span class="card-icon">🧠</span>
+                                <span class="card-title">Votre intuition</span>
+                            </div>
+                            <div class="card-content" id="intuitionCard">
+                                <!-- Contenu dynamique -->
+                            </div>
+                        </div>
+                        
+                        <div class="duel-separator">
+                            <span class="vs">VS</span>
+                        </div>
+                        
+                        <div class="duel-card data">
+                            <div class="card-header">
+                                <span class="card-icon">📊</span>
+                                <span class="card-title">Les données</span>
+                            </div>
+                            <div class="card-content" id="dataCard">
+                                <!-- Contenu dynamique -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-details" id="resultDetails">
+                        <!-- Détails du résultat -->
+                    </div>
+
+                    <div class="top-list" id="topList">
+                        <!-- Top 5 -->
+                    </div>
+                    <button class="btn btn-primary" id="nextBtn4" style="margin-top: 20px; width: 100%;">
+                        Passer à la décision →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Étape 5 : Décision -->
+            <div class="step" id="step5">
+                <div class="card">
+                    <div class="step-indicator">
+                        <span class="step-number">5</span>
+                        <span class="step-label">Décision</span>
+                    </div>
+                    <button class="btn btn-secondary" id="backBtn5" style="margin-bottom: 20px; width: 100%;">← Retour</button>
+                    <h2 id="decisionTitle">Que faites-vous ?</h2>
+                    <div class="decision-options" id="decisionOptions">
+                        <!-- Options dynamiques -->
+                    </div>
+                    <div class="summary-section" id="summarySection">
+                        <h3>Résumé à partager</h3>
+                        <div class="summary-box" id="summaryBox"></div>
+                        <button class="btn btn-secondary" id="copySummary">📋 Copier</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by Mistral - Hackathon 2026</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

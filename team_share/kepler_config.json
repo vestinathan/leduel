@@ -1,0 +1,770 @@
+{
+  "version": "v1",
+  "config": {
+    "version": "v1",
+    "mapState": {
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "zoom": 12
+    },
+    "mapStyle": {
+      "styleType": "dark"
+    }
+  },
+  "data": {
+    "salons": {
+      "label": "Salons de Coiffure",
+      "data": [
+        {
+          "name": "Salon Louvre",
+          "address": "1 Rue de Rivoli",
+          "lat": 48.8626,
+          "lng": 2.3365,
+          "rating": 4.5,
+          "user_ratings_total": 120.0,
+          "arrondissement": 1
+        },
+        {
+          "name": "Salon Palais Royal",
+          "address": "2 Rue de Montpensier",
+          "lat": 48.862,
+          "lng": 2.336,
+          "rating": 4.3,
+          "user_ratings_total": 85.0,
+          "arrondissement": 1
+        },
+        {
+          "name": "Salon Tuileries",
+          "address": "3 Rue de Castiglione",
+          "lat": 48.863,
+          "lng": 2.337,
+          "rating": 4.7,
+          "user_ratings_total": 150.0,
+          "arrondissement": 1
+        },
+        {
+          "name": "Salon Bourse",
+          "address": "4 Rue de la Bourse",
+          "lat": 48.8685,
+          "lng": 2.343,
+          "rating": 4.2,
+          "user_ratings_total": 95.0,
+          "arrondissement": 2
+        },
+        {
+          "name": "Salon Op\u00e9ra",
+          "address": "5 Rue de la Chauss\u00e9e d'Antin",
+          "lat": 48.868,
+          "lng": 2.3425,
+          "rating": 4.4,
+          "user_ratings_total": 110.0,
+          "arrondissement": 2
+        },
+        {
+          "name": "Salon Vivienne",
+          "address": "6 Rue Vivienne",
+          "lat": 48.8675,
+          "lng": 2.342,
+          "rating": 4.6,
+          "user_ratings_total": 130.0,
+          "arrondissement": 2
+        },
+        {
+          "name": "Salon Marais",
+          "address": "7 Rue des Francs Bourgeois",
+          "lat": 48.863,
+          "lng": 2.3605,
+          "rating": 4.5,
+          "user_ratings_total": 200.0,
+          "arrondissement": 3
+        },
+        {
+          "name": "Salon Temple",
+          "address": "8 Rue du Temple",
+          "lat": 48.8625,
+          "lng": 2.36,
+          "rating": 4.3,
+          "user_ratings_total": 75.0,
+          "arrondissement": 3
+        },
+        {
+          "name": "Salon Archives",
+          "address": "9 Rue des Archives",
+          "lat": 48.862,
+          "lng": 2.3595,
+          "rating": 4.7,
+          "user_ratings_total": 180.0,
+          "arrondissement": 3
+        },
+        {
+          "name": "Salon \u00cele de la Cit\u00e9",
+          "address": "10 Rue de la Cit\u00e9",
+          "lat": 48.8545,
+          "lng": 2.3575,
+          "rating": 4.4,
+          "user_ratings_total": 160.0,
+          "arrondissement": 4
+        },
+        {
+          "name": "Salon H\u00f4tel de Ville",
+          "address": "11 Rue de Rivoli",
+          "lat": 48.854,
+          "lng": 2.357,
+          "rating": 4.2,
+          "user_ratings_total": 60.0,
+          "arrondissement": 4
+        },
+        {
+          "name": "Salon Saint-Louis",
+          "address": "12 Rue Saint-Louis en l'\u00cele",
+          "lat": 48.855,
+          "lng": 2.358,
+          "rating": 4.5,
+          "user_ratings_total": 140.0,
+          "arrondissement": 4
+        },
+        {
+          "name": "Salon Sorbonne",
+          "address": "13 Rue de la Sorbonne",
+          "lat": 48.8445,
+          "lng": 2.351,
+          "rating": 4.6,
+          "user_ratings_total": 250.0,
+          "arrondissement": 5
+        },
+        {
+          "name": "Salon Panth\u00e9on",
+          "address": "14 Rue Soufflot",
+          "lat": 48.844,
+          "lng": 2.3505,
+          "rating": 4.3,
+          "user_ratings_total": 190.0,
+          "arrondissement": 5
+        },
+        {
+          "name": "Salon Latin",
+          "address": "15 Rue Mouffetard",
+          "lat": 48.845,
+          "lng": 2.3515,
+          "rating": 4.5,
+          "user_ratings_total": 180.0,
+          "arrondissement": 5
+        },
+        {
+          "name": "Salon Saint-Germain",
+          "address": "16 Rue de Buci",
+          "lat": 48.849,
+          "lng": 2.333,
+          "rating": 4.7,
+          "user_ratings_total": 220.0,
+          "arrondissement": 6
+        },
+        {
+          "name": "Salon Od\u00e9on",
+          "address": "17 Rue de l'Od\u00e9on",
+          "lat": 48.8495,
+          "lng": 2.3335,
+          "rating": 4.4,
+          "user_ratings_total": 130.0,
+          "arrondissement": 6
+        },
+        {
+          "name": "Salon Luxembourg",
+          "address": "18 Rue de Vaugirard",
+          "lat": 48.8485,
+          "lng": 2.3325,
+          "rating": 4.5,
+          "user_ratings_total": 170.0,
+          "arrondissement": 6
+        },
+        {
+          "name": "Salon Invalides",
+          "address": "19 Rue de Varenne",
+          "lat": 48.8565,
+          "lng": 2.3125,
+          "rating": 4.3,
+          "user_ratings_total": 140.0,
+          "arrondissement": 7
+        },
+        {
+          "name": "Salon Eiffel",
+          "address": "20 Rue Cler",
+          "lat": 48.856,
+          "lng": 2.312,
+          "rating": 4.6,
+          "user_ratings_total": 190.0,
+          "arrondissement": 7
+        },
+        {
+          "name": "Salon Tour Eiffel",
+          "address": "21 Avenue de la Bourdonnais",
+          "lat": 48.856,
+          "lng": 2.2945,
+          "rating": 4.5,
+          "user_ratings_total": 200.0,
+          "arrondissement": 7
+        },
+        {
+          "name": "Salon Champs-\u00c9lys\u00e9es",
+          "address": "22 Av des Champs-\u00c9lys\u00e9es",
+          "lat": 48.8725,
+          "lng": 2.3125,
+          "rating": 4.8,
+          "user_ratings_total": 300.0,
+          "arrondissement": 8
+        },
+        {
+          "name": "Salon Madeleine",
+          "address": "23 Rue de la Madeleine",
+          "lat": 48.873,
+          "lng": 2.323,
+          "rating": 4.7,
+          "user_ratings_total": 280.0,
+          "arrondissement": 8
+        },
+        {
+          "name": "Salon Op\u00e9ra Garnier",
+          "address": "24 Rue Halevy",
+          "lat": 48.8715,
+          "lng": 2.3325,
+          "rating": 4.5,
+          "user_ratings_total": 220.0,
+          "arrondissement": 9
+        },
+        {
+          "name": "Salon Grand Boulevards",
+          "address": "25 Rue de la Chauss\u00e9e d'Antin",
+          "lat": 48.877,
+          "lng": 2.3375,
+          "rating": 4.4,
+          "user_ratings_total": 160.0,
+          "arrondissement": 9
+        },
+        {
+          "name": "Salon Pigalle",
+          "address": "26 Rue Pigalle",
+          "lat": 48.8815,
+          "lng": 2.3455,
+          "rating": 4.3,
+          "user_ratings_total": 100.0,
+          "arrondissement": 9
+        },
+        {
+          "name": "Salon Nouvel Op\u00e9ra",
+          "address": "27 Rue Lepic",
+          "lat": 48.8775,
+          "lng": 2.3425,
+          "rating": 4.5,
+          "user_ratings_total": 170.0,
+          "arrondissement": 9
+        },
+        {
+          "name": "Salon Gare du Nord",
+          "address": "28 Rue de Dunkerque",
+          "lat": 48.876,
+          "lng": 2.3605,
+          "rating": 4.2,
+          "user_ratings_total": 90.0,
+          "arrondissement": 10
+        },
+        {
+          "name": "Salon Canal Saint-Martin",
+          "address": "29 Quai de la Loire",
+          "lat": 48.8765,
+          "lng": 2.361,
+          "rating": 4.4,
+          "user_ratings_total": 120.0,
+          "arrondissement": 10
+        },
+        {
+          "name": "Salon R\u00e9publique",
+          "address": "30 Rue du Faubourg du Temple",
+          "lat": 48.88,
+          "lng": 2.365,
+          "rating": 4.3,
+          "user_ratings_total": 110.0,
+          "arrondissement": 10
+        },
+        {
+          "name": "Salon Oberkampf",
+          "address": "31 Rue Oberkampf",
+          "lat": 48.859,
+          "lng": 2.38,
+          "rating": 4.5,
+          "user_ratings_total": 200.0,
+          "arrondissement": 11
+        },
+        {
+          "name": "Salon Bastille",
+          "address": "32 Rue du Faubourg Saint-Antoine",
+          "lat": 48.8595,
+          "lng": 2.3805,
+          "rating": 4.3,
+          "user_ratings_total": 140.0,
+          "arrondissement": 11
+        },
+        {
+          "name": "Salon Roquette",
+          "address": "33 Rue de la Roquette",
+          "lat": 48.8585,
+          "lng": 2.3795,
+          "rating": 4.4,
+          "user_ratings_total": 150.0,
+          "arrondissement": 11
+        },
+        {
+          "name": "Salon Bercy",
+          "address": "34 Rue de Bercy",
+          "lat": 48.835,
+          "lng": 2.4215,
+          "rating": 4.5,
+          "user_ratings_total": 160.0,
+          "arrondissement": 12
+        },
+        {
+          "name": "Salon Gare de Lyon",
+          "address": "35 Avenue des Terroirs de France",
+          "lat": 48.8355,
+          "lng": 2.422,
+          "rating": 4.3,
+          "user_ratings_total": 130.0,
+          "arrondissement": 12
+        },
+        {
+          "name": "Salon Picpus",
+          "address": "36 Rue de Picpus",
+          "lat": 48.8345,
+          "lng": 2.421,
+          "rating": 4.6,
+          "user_ratings_total": 170.0,
+          "arrondissement": 12
+        },
+        {
+          "name": "Salon Butte-aux-Cailles",
+          "address": "37 Rue de la Butte-aux-Cailles",
+          "lat": 48.828,
+          "lng": 2.362,
+          "rating": 4.4,
+          "user_ratings_total": 140.0,
+          "arrondissement": 13
+        },
+        {
+          "name": "Salon Chinatown",
+          "address": "38 Avenue de Choisy",
+          "lat": 48.8285,
+          "lng": 2.3625,
+          "rating": 4.2,
+          "user_ratings_total": 120.0,
+          "arrondissement": 13
+        },
+        {
+          "name": "Salon Biblioth\u00e8que",
+          "address": "39 Rue de Tolbiac",
+          "lat": 48.829,
+          "lng": 2.363,
+          "rating": 4.5,
+          "user_ratings_total": 160.0,
+          "arrondissement": 13
+        },
+        {
+          "name": "Salon Denfert-Rochereau",
+          "address": "40 Boulevard Saint-Jacques",
+          "lat": 48.8295,
+          "lng": 2.327,
+          "rating": 4.3,
+          "user_ratings_total": 100.0,
+          "arrondissement": 14
+        },
+        {
+          "name": "Salon Montparnasse",
+          "address": "41 Rue de Rennes",
+          "lat": 48.829,
+          "lng": 2.3265,
+          "rating": 4.4,
+          "user_ratings_total": 130.0,
+          "arrondissement": 14
+        },
+        {
+          "name": "Salon Parc Montsouris",
+          "address": "42 Rue Gazan",
+          "lat": 48.829,
+          "lng": 2.327,
+          "rating": 4.6,
+          "user_ratings_total": 150.0,
+          "arrondissement": 14
+        },
+        {
+          "name": "Salon Vaugirard",
+          "address": "43 Rue de Vaugirard",
+          "lat": 48.84,
+          "lng": 2.293,
+          "rating": 4.5,
+          "user_ratings_total": 180.0,
+          "arrondissement": 15
+        },
+        {
+          "name": "Salon Beaugrenelle",
+          "address": "44 Rue Lakanal",
+          "lat": 48.8405,
+          "lng": 2.2935,
+          "rating": 4.3,
+          "user_ratings_total": 110.0,
+          "arrondissement": 15
+        },
+        {
+          "name": "Salon Convention",
+          "address": "45 Avenue de la Convention",
+          "lat": 48.84,
+          "lng": 2.2925,
+          "rating": 4.7,
+          "user_ratings_total": 190.0,
+          "arrondissement": 15
+        },
+        {
+          "name": "Salon Passy",
+          "address": "46 Rue de Passy",
+          "lat": 48.8605,
+          "lng": 2.262,
+          "rating": 4.5,
+          "user_ratings_total": 170.0,
+          "arrondissement": 16
+        },
+        {
+          "name": "Salon Trocad\u00e9ro",
+          "address": "47 Avenue du Pr\u00e9sident Wilson",
+          "lat": 48.86,
+          "lng": 2.2615,
+          "rating": 4.3,
+          "user_ratings_total": 120.0,
+          "arrondissement": 16
+        },
+        {
+          "name": "Salon Auteuil",
+          "address": "48 Rue d'Auteuil",
+          "lat": 48.86,
+          "lng": 2.2625,
+          "rating": 4.6,
+          "user_ratings_total": 180.0,
+          "arrondissement": 16
+        },
+        {
+          "name": "Salon Monceau",
+          "address": "49 Boulevard de Courcelles",
+          "lat": 48.8875,
+          "lng": 2.307,
+          "rating": 4.4,
+          "user_ratings_total": 140.0,
+          "arrondissement": 17
+        },
+        {
+          "name": "Salon Batignolles",
+          "address": "50 Rue des Batignolles",
+          "lat": 48.887,
+          "lng": 2.3065,
+          "rating": 4.5,
+          "user_ratings_total": 170.0,
+          "arrondissement": 17
+        },
+        {
+          "name": "Salon Wagram",
+          "address": "51 Avenue de Wagram",
+          "lat": 48.8875,
+          "lng": 2.3075,
+          "rating": 4.3,
+          "user_ratings_total": 100.0,
+          "arrondissement": 17
+        },
+        {
+          "name": "Salon Montmartre",
+          "address": "52 Rue Lepic",
+          "lat": 48.8925,
+          "lng": 2.348,
+          "rating": 4.7,
+          "user_ratings_total": 220.0,
+          "arrondissement": 18
+        },
+        {
+          "name": "Salon Sacr\u00e9-C\u0153ur",
+          "address": "53 Rue du Chevalier de la Barre",
+          "lat": 48.892,
+          "lng": 2.3475,
+          "rating": 4.6,
+          "user_ratings_total": 190.0,
+          "arrondissement": 18
+        },
+        {
+          "name": "Salon Abbesses",
+          "address": "54 Rue Yvonne le Tac",
+          "lat": 48.8925,
+          "lng": 2.3485,
+          "rating": 4.4,
+          "user_ratings_total": 160.0,
+          "arrondissement": 18
+        },
+        {
+          "name": "Salon Belleville",
+          "address": "55 Rue de Belleville",
+          "lat": 48.887,
+          "lng": 2.385,
+          "rating": 4.5,
+          "user_ratings_total": 200.0,
+          "arrondissement": 19
+        },
+        {
+          "name": "Salon Parc des Buttes-Chaumont",
+          "address": "56 Rue de Crim\u00e9e",
+          "lat": 48.8875,
+          "lng": 2.3845,
+          "rating": 4.3,
+          "user_ratings_total": 140.0,
+          "arrondissement": 19
+        },
+        {
+          "name": "Salon Jaur\u00e8s",
+          "address": "57 Avenue Jean Jaur\u00e8s",
+          "lat": 48.887,
+          "lng": 2.384,
+          "rating": 4.6,
+          "user_ratings_total": 180.0,
+          "arrondissement": 19
+        },
+        {
+          "name": "Salon M\u00e9nilmontant",
+          "address": "58 Rue de M\u00e9nilmontant",
+          "lat": 48.8635,
+          "lng": 2.401,
+          "rating": 4.4,
+          "user_ratings_total": 150.0,
+          "arrondissement": 20
+        },
+        {
+          "name": "Salon P\u00e8re Lachaise",
+          "address": "59 Boulevard de M\u00e9nilmontant",
+          "lat": 48.863,
+          "lng": 2.4015,
+          "rating": 4.5,
+          "user_ratings_total": 190.0,
+          "arrondissement": 20
+        },
+        {
+          "name": "Salon Porte de Bagnolet",
+          "address": "60 Rue de Bagnolet",
+          "lat": 48.864,
+          "lng": 2.402,
+          "rating": 4.3,
+          "user_ratings_total": 130.0,
+          "arrondissement": 20
+        }
+      ],
+      "fields": [
+        {
+          "name": "latitude",
+          "type": "lat",
+          "format": ""
+        },
+        {
+          "name": "longitude",
+          "type": "lng",
+          "format": ""
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "format": ""
+        },
+        {
+          "name": "rating",
+          "type": "number",
+          "format": ""
+        }
+      ]
+    },
+    "arrondissements": {
+      "label": "Arrondissements de Paris",
+      "data": [
+        {
+          "arrondissement": 1,
+          "latitude": 48.862563,
+          "longitude": 2.336443,
+          "gap_score": 40521258.62068965,
+          "population": 15361,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 2,
+          "latitude": 48.868279,
+          "longitude": 2.342803,
+          "gap_score": 69184901.40845071,
+          "population": 20992,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 3,
+          "latitude": 48.862872,
+          "longitude": 2.360001,
+          "gap_score": 90416308.96551724,
+          "population": 35017,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 4,
+          "latitude": 48.854341,
+          "longitude": 2.35763,
+          "gap_score": 107307234.0425532,
+          "population": 27410,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 5,
+          "latitude": 48.844443,
+          "longitude": 2.350715,
+          "gap_score": 153584200.00000003,
+          "population": 59838,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 6,
+          "latitude": 48.84913,
+          "longitude": 2.332898,
+          "gap_score": 134607191.78082192,
+          "population": 41374,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 7,
+          "latitude": 48.856174,
+          "longitude": 2.312188,
+          "gap_score": 175119541.6666667,
+          "population": 55914,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 8,
+          "latitude": 48.872721,
+          "longitude": 2.312554,
+          "gap_score": 124039000.0,
+          "population": 37751,
+          "nb_salons": 2
+        },
+        {
+          "arrondissement": 9,
+          "latitude": 48.877164,
+          "longitude": 2.337458,
+          "gap_score": 148224427.80748662,
+          "population": 59737,
+          "nb_salons": 4
+        },
+        {
+          "arrondissement": 10,
+          "latitude": 48.87613,
+          "longitude": 2.360728,
+          "gap_score": 218070802.87769783,
+          "population": 89574,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 11,
+          "latitude": 48.859059,
+          "longitude": 2.380058,
+          "gap_score": 292589260.5633803,
+          "population": 148650,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 12,
+          "latitude": 48.834974,
+          "longitude": 2.421324,
+          "gap_score": 295655500.0,
+          "population": 139132,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 13,
+          "latitude": 48.828388,
+          "longitude": 2.36227,
+          "gap_score": 375064765.9574467,
+          "population": 179878,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 14,
+          "latitude": 48.829245,
+          "longitude": 2.326542,
+          "gap_score": 313893261.5384615,
+          "population": 139747,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 15,
+          "latitude": 48.840085,
+          "longitude": 2.292826,
+          "gap_score": 669304655.1724138,
+          "population": 228351,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 16,
+          "latitude": 48.860392,
+          "longitude": 2.261971,
+          "gap_score": 678457130.5555556,
+          "population": 160793,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 17,
+          "latitude": 48.887327,
+          "longitude": 2.306777,
+          "gap_score": 733129049.2957747,
+          "population": 168590,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 18,
+          "latitude": 48.892569,
+          "longitude": 2.348161,
+          "gap_score": 564892473.4693878,
+          "population": 196589,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 19,
+          "latitude": 48.887076,
+          "longitude": 2.384821,
+          "gap_score": 473242500.00000006,
+          "population": 184680,
+          "nb_salons": 3
+        },
+        {
+          "arrondissement": 20,
+          "latitude": 48.863461,
+          "longitude": 2.401188,
+          "gap_score": 555181211.2676057,
+          "population": 197336,
+          "nb_salons": 3
+        }
+      ],
+      "fields": [
+        {
+          "name": "latitude",
+          "type": "lat",
+          "format": ""
+        },
+        {
+          "name": "longitude",
+          "type": "lng",
+          "format": ""
+        },
+        {
+          "name": "gap_score",
+          "type": "number",
+          "format": ""
+        },
+        {
+          "name": "population",
+          "type": "number",
+          "format": ""
+        }
+      ]
+    }
+  }
+}
